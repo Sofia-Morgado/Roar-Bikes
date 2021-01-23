@@ -3,8 +3,11 @@ html{
 }
 
 body{
-    background-image: linear-gradient(62deg, #FBAB7E,#F7CE68);
-
+    background-image: linear-gradient(#FC5E55,#FA4083);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+     
 }
 
 .container{
@@ -33,40 +36,48 @@ main{
 }
 
 .herobox1{
-    width: 50%;
     flex: 2;
+    padding-right: 100px;
 }
 
 .herobox2{
-    width: 50%;
     flex: 1;
 }
 
 .cards{
-    background-color: lightgreen;
-    min-height: 300px;
     display: flex;
     justify-content: space-between;
 }
 
 .card1{
-    background-color: pink;
-    min-height: 300px;
+    background-image: url(images/image-background-card1.jpg);
     width: 30%;
+    min-height: 250px;
+    background-size: cover;
 }
 
 .card2{
-    background-color: palevioletred;
-    min-height: 300px;
+    background-image: url(images/image-background-card2.jpg);
     width: 30%;
+    min-height: 250px;
+    background-size: cover;
 }
 
 .card3{
-    background-color: purple;
-    min-height: 300px;
+    background-image: url(images/image-background-card3.jpg);
     width: 30%;
+    min-height: 250px;
+    background-size: cover;
 }
 
 
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+}
 
-
+p{
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+}
