@@ -1,9 +1,11 @@
 html{
-    height: 100%;
+    background-image: linear-gradient(#FC5E55,#FA4083);
 }
 
 body{
-    background-image: linear-gradient(#FC5E55,#FA4083);
+    background-image: url(images/image-lion-background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
@@ -26,6 +28,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 0 20px 0;
+    border-bottom: 1px solid lightgrey;
 }
 
 
@@ -33,11 +36,53 @@ header nav{
     display: flex;
 }
 
+.navbutton{
+    padding: 11px 25px;
+    font-family:'Playfair Display', serif;
+    border: 1px solid white;
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    margin-left: -36px;
+    padding-top: 20px;
+    z-index: 1;
+    text-align: center;
+    width: auto;    
+}
+
+.navbutton:hover .dropdown{
+    display: block;
+}
+
+.dropdown .navbutton{
+    background-color: white;
+    margin-bottom: 2px;
+}
+
+.dropdown .navbutton:hover a{
+    color: #FA4083;
+}
+
+.dropdown .navbutton a{
+    color: black;
+}
+
 
 main{
     min-height: 300px;
     display: flex;
     align-items: center;
+}
+
+.main2{
+    min-height: 800px;
+    padding-top: 50px;
+    margin-bottom: -35px;
 }
 
 .herobox1{
@@ -58,6 +103,7 @@ main{
 
 .button:hover{
     background-color: rgba(255, 255, 255, 0.89);
+    transition-duration: 0.5s
 }
 
 .herobox2{
@@ -128,3 +174,49 @@ p{
     padding-top: 30px;
 }
 
+
+.testimonials{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.tbox{
+    border: 1px solid white;
+    width: 47%;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.tbox p:last-child{
+    font-size: 0.8rem;
+}
+
+.inputwrapper{
+    margin-bottom: 30px;
+    
+}
+
+input[type=text], input[type=email], textarea{
+    padding: 12px 20px;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+.newline{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.margin-right-a{
+    margin-right: 20px;
+}
+
+input[type=radio]{
+    margin-right: 10px;
+}
